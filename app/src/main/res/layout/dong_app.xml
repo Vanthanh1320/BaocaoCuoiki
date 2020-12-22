@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:background="@drawable/et_btn3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/im_hinh"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logogtrendz"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_gia"
+        android:gravity="center"
+        android:text="gia"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:background="@drawable/et_btn2"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Ten"
+        android:gravity="left"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_ten"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:padding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItem_ag"
+        android:title="An Giang" />
+    <item
+        android:id="@+id/menuItem_bt"
+        android:title="Bến Tre" />
+    <item
+        android:id="@+id/menuItem_cm"
+        android:title="Cà Mau">
+    </item>
+
+    <item
+        android:id="@+id/menuItem_dn"
+        android:title="Đồng Nai">
+    </item>
+
+    <item
+        android:id="@+id/menuItem_gl"
+        android:title="Gia Lai">
+    </item>
+    <item
+        android:id="@+id/menuItem_hb"
+        android:title="Hòa Bình">
+    </item>
+    <item
+        android:id="@+id/menuItem_kh"
+        android:title="Khánh Hòa">
+    </item>
+    <item
+        android:id="@+id/menuItem_qn"
+        android:title="Quảng Nam">
+    </item>
+    <item
+        android:id="@+id/menuItem_dan"
+        android:title="Đà Nẵng">
+    </item>
+    <item
+        android:id="@+id/menuItem_na"
+        android:title="Nghệ An">
+    </item>
+    <item
+    android:id="@+id/menuItem_hp"
+    android:title="Hải Phòng">
+</item>
+    <item
+    android:id="@+id/menuItem_hn"
+    android:title="Hà Nội">
+</item>
+    <item
+        android:id="@+id/menuItem_hcm"
+        android:title="Tp Hồ Chí Minh">
+    </item>
+</menu>

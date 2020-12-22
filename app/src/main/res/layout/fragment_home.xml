@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#e4e5e9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        android:background="#fff"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logogtrendz"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="20dp"
+            android:hint="Search products"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#6A6363"
+            android:background="@drawable/et_bgtt"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/shop"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="2000dp"
+    android:layout_below="@id/header">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slide"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:auto_cycle="true"
+        app:delay="0"
+        app:period="2500"
+        app:placeholder="@drawable/men1"
+        app:error_image="@drawable/men1"
+        app:corner_radius="5">
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <HorizontalScrollView
+        android:id="@+id/horiview_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <RelativeLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#fff"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="#171717"
+                android:textSize="18dp"/>
+
+            <ImageButton
+                android:id="@+id/imabt_1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/men"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Men"
+                android:textColor="#171717"/>
+
+            <ImageButton
+                android:id="@+id/imabt_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="90dp"
+                android:background="@drawable/women"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_2"
+                android:layout_marginLeft="90dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Women"
+                android:textColor="#171717"/>
+
+            <ImageButton
+                android:id="@+id/imabt_3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="170dp"
+                android:background="@drawable/boy"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_3"
+                android:layout_marginLeft="170dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Boys"
+                android:textColor="#171717"/>
+
+            <ImageButton
+                android:id="@+id/imabt_4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/girl"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_4"
+                android:layout_marginLeft="250dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Girls"
+                android:textColor="#171717" />
+
+            <ImageButton
+                android:id="@+id/imabt_5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="330dp"
+                android:background="@drawable/ass"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_5"
+                android:layout_marginLeft="330dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="#171717"
+                android:text="Accessories" />
+
+            <ImageButton
+                android:id="@+id/imabt_6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="410dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bags"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imabt_5"
+                android:layout_marginLeft="410dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="#171717"
+                android:text="Bags" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3700dp"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_hinh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/men">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#171717"/>
+
+            <TextView
+                android:id="@+id/tv_men"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_men"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/women">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Women"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_women"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/boy">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boys"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="198dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_boy"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/girl">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Girls"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_girl"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ass">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessories"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_acc"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/bags">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bags"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_bag"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="5dp"
+            android:numColumns="2"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brands"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ALL >>"
+                android:textColor="#1E59CF"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horiview_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#fff"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/imabt_b1"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/puma"
+                    android:layout_marginTop="5dp" />
+
+                <ImageButton
+                    android:id="@+id/imabt_b2"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="155dp"
+                    android:background="@drawable/wood"
+                    android:layout_marginTop="5dp" />
+
+                <ImageButton
+                    android:id="@+id/imabt_b3"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="300dp"
+                    android:background="@drawable/campus"
+                    android:layout_marginTop="5dp" />
+
+                <ImageButton
+                    android:id="@+id/imabt_b4"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="445dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/trendz"/>
+
+                <ImageButton
+                    android:id="@+id/imabt_b5"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="590dp"
+                    android:background="@drawable/lancer"
+                    android:layout_marginTop="5dp" />
+
+                <ImageButton
+                    android:id="@+id/imabt_b6"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="735dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/sparx"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOLLOW US ON"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/follow"/>
+
+        </LinearLayout>
+
+             </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

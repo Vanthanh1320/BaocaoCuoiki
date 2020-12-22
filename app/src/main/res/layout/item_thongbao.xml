@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/tb"
+    android:background="#eeeeee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagehinh"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/ten"
+            android:textColor="#171717"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imagehinh"
+            android:layout_width="280dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="chi tiết"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/motabh"
+            android:layout_below="@id/ten"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/imagehinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="thời gian"
+            android:layout_marginBottom="5dp"
+            android:textColor="#5A5858"
+            android:paddingLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ibvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="380dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

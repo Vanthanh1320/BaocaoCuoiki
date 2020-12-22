@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e5e9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imagehinh"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:padding="10dp"
+            android:src="@drawable/men1">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/ten"
+            android:textStyle="bold"
+            android:textColor="#5E5C5C"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/imagehinh"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="MLB WHITE NY LOGO ĐEN"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/sol"
+            android:textStyle="bold"
+            android:textColor="#5E5C5C"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/imagehinh"
+            android:layout_width="250dp"
+            android:layout_below="@+id/ten"
+            android:layout_height="wrap_content"
+            android:text="Số lượng: 1"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/motabh"
+            android:layout_below="@id/sol"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/imagehinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="850.000đ"
+            android:layout_marginBottom="5dp"
+            android:textColor="#F47047"
+            android:paddingLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ibvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="380dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

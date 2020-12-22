@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activitykhac.MuaHangMain">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin giao hàng"
+        android:id="@+id/text"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/khung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tv_ten"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Họ và tên"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/et_bgtt"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:id="@+id/tv_mail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/et_bgtt"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:id="@+id/tv_sdt"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Số điện thoại"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/et_bgtt"
+            android:paddingLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tv_tinh"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Tỉnh thành"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/et_bgtt"
+            android:paddingLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_chon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-28dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:hint="Ghi chú"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/et_bgtt"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radio_the"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/khung"
+        android:layout_marginLeft="10dp"
+        android:textColor="#5E5C5C"
+        android:layout_marginTop="5dp"
+        android:text="Thanh toán bằng thẻ"/>
+
+    <RadioButton
+        android:id="@+id/radio_nhanhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_the"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5E5C5C"
+        android:text="Thanh toán khi nhận hàng"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_nhanhang"
+        android:text="Hoàn thành đặt hàng"
+        android:background="@drawable/backgroud"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/btn_dh"/>
+
+
+
+</RelativeLayout>

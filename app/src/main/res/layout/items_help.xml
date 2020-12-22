@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/et_btn3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ten"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#e4e5e9"
+            android:gravity="center"
+            android:id="@+id/tv_ten"
+            android:layout_marginTop="1dp"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:textColor="#171717"/>
+
+        <ImageView
+            android:id="@+id/im_hinh"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/action"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
